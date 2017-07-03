@@ -54,7 +54,7 @@ public class Maintivity extends AppCompatActivity implements View.OnClickListene
 
     private ViewPager viewPager;
     private ArrayList<String> urlList;                  // 儲存手機圖片的路徑-2
-    private ArrayList<String> urlCheckList;             // 儲存選擇的圖片路徑
+    private ArrayList<String> urlCheckList;             // 儲存勾選的圖片路徑
     private int currentPosition;                        // 儲存當前頁面的position
 
     private List<String> pathList;                      // 儲存手機圖片的路徑-1
@@ -87,7 +87,7 @@ public class Maintivity extends AppCompatActivity implements View.OnClickListene
         getSDImagePath();                                                      // 取得手機裡面的所有圖片路徑
 
         urlList = new ArrayList<>();                                           // 實體化 儲存本機所有圖片的空間
-        urlCheckList = new ArrayList<>();                                      // 實體化 儲存所以勾選圖片的空間
+        urlCheckList = new ArrayList<>();                                      // 實體化 儲存所有勾選圖片的空間
         for (int i = 0; i < pathList.size(); i++) {
             urlList.add(pathList.get(i));
         }
